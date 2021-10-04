@@ -19,7 +19,7 @@ hooks:
       runas: root
     - location: scripts/install_python_dependencies.sh
       timeout: 6000
-      runas: root
+      runas: ubuntu
     - location: scripts/migrate.sh
       timeout: 6000
       runas: ubuntu
@@ -30,4 +30,4 @@ hooks:
   ApplicationStop:
     - location: scripts/stop_application.sh
       timeout: 6000
-      runas: root
+      runas: ubuntu
